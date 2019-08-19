@@ -1,0 +1,62 @@
+{
+  "name": "ws-avc-player",
+  "version": "0.1.9",
+  "main": "lib/WSAvcPlayer.js",
+  "files": [
+    "lib/",
+    "AUTHORS",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "example": "node example/index.js",
+    "build": "cross-env NODE_ENV=production webpack",
+    "build:dev": "webpack",
+    "lint": "eslint .",
+    "lint-fix": "eslint . --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matijagaspar/ws-avc-player"
+  },
+  "keywords": [
+    "h264",
+    "nal",
+    "live",
+    "broadcast",
+    "streaming",
+    "video",
+    "websocket",
+    "raspberry"
+  ],
+  "author": "Matija Gaspar (http://github.com/matijagaspar)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matijagaspar/ws-avc-player/issues"
+  },
+  "description": "Stream realtime h264 video directly to the browser. Ideal for raspberry pi. Comes with a browser player, and streaming server.\n Based of h264-live-player that uses Broadway Decoder.",
+  "dependencies": {
+    "debug": "^2.3.2",
+    "stream-split": "^1.1.0",
+    "sylvester.js": "^0.1.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.2",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "cross-env": "^5.1.1",
+    "eslint": "^4.11.0",
+    "eslint-import-resolver-webpack": "^0.8.3",
+    "expres": "^0.0.5",
+    "file-loader": "^1.1.5",
+    "raw-loader": "^0.5.1",
+    "uglifyjs-webpack-plugin": "^1.1.0",
+    "uws": "^9.14.0",
+    "webpack": "^3.8.1",
+    "webpack-bundle-analyzer": "^2.9.1"
+  }
+}
